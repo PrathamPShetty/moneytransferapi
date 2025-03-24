@@ -27,4 +27,4 @@ ENV PORT=${PORT}
 EXPOSE ${PORT}
 
 # Start the application using Gunicorn with the specified port
-CMD ["sh", "-c", "gunicorn moneytransfer.wsgi:application --bind 0.0.0.0:${PORT}"]
+CMD ["sh", "-c", "gunicorn moneytransfer.wsgi:application --bind 0.0.0.0:5000"]
