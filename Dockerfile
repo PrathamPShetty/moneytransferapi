@@ -20,6 +20,7 @@ COPY . /app/
 
 # Run migrations before starting the app
 RUN python manage.py migrate
+RUN python manage.py collectstatic --noinput
 
 # Expose the port dynamically
 ARG PORT=8000
